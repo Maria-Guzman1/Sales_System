@@ -1,0 +1,38 @@
+/* Estilo general del cuerpo */
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh; /* Asegura que el body ocupe toda la altura de la ventana */
+}
+
+/* Estilo para el encabezado */
+header {
+    background-color: #162447;
+    padding: 5px;
+    text-align: center;
+    border-bottom: 2px solid #007bff;
+    margin-bottom: 2rem;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 36px;
+    color: #ffffff;
+}
+
+/* Estilo para la navegación */
+.navbar-brand {
+    font-size: 1.20rem;
+    font-weight: 600;
+    color: #f8f9fa;
+}
+
+.navbar-nav .nav-link {
+    color: #f8f9fa !important;
+    font-weight: 500;
+    transition: color 0.3s ease; /* Transición suave para el color del texto */
+}
+
+.navbar-nav .nav-link:hover {
+    color: #007bff !important; /* Color azul para hover */
+}

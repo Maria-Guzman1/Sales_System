@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="mi-tienda.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historial de Facturación</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <a class="navbar-brand" href="mi-tienda.html">Sistema de Ventas</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="registro-producto.html">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="facturacion.html" aria-label="Facturación">Gestionar Compra</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="gestion-usuarios.html">Administración</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="clientes.html" aria-label="Clientes">Clientes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="historial-facturacion.html" aria-label="Historial de Facturación">Historial de Facturas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html" aria-label="Cerrar sesión">Cerrar sesión</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container mt-5">
+        <h1>Historial de Facturación</h1>
+        <table class="table table-bordered" id="facturacionTable">
+            <thead>
+                <tr>
+                    <th>Número de Factura</th>
+                    <th>Fecha</th>
+                    <th>Cliente</th>
+                    <th>Monto</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Las filas se agregarán aquí dinámicamente -->
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Incluir el archivo JavaScript externo -->
+    <script type="module" src="historial-facturacion.js"></script>
+</body>
+</html>

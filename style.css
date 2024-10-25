@@ -1,0 +1,115 @@
+/* style.css */
+
+/* Estilo general */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+    background-color: #121212;
+    min-height: 100vh;
+}
+
+/* Estilo del encabezado */
+header {
+    background-color: #162447;
+    padding: 10px;
+    text-align: center;
+    border-bottom: 2px solid #007bff;
+    margin-bottom: 2rem;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.25rem;
+    color: #ffffff;
+}
+
+/* Navegación */
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #f8f9fa;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #007bff;
+}
+
+/* Estilo para el contenido principal */
+.main-content {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #1e1e1e;
+    border-radius: 8px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.main-content:hover {
+    transform: scale(1.02);
+}
+
+.main-content h2 {
+    font-size: 28px;
+    color: #ffffff;
+}
+
+.main-content p {
+    font-size: 18px;
+    color: #b0b0b0;
+}
+
+/* Estilo para el pie de página */
+footer {
+    background-color: #162447;
+    padding: 10px;
+    text-align: center;
+    border-top: 2px solid #007bff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+    color: #ffffff;
+}
+
+/* Interactividad para botones */
+button {
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #00d1b2;
+    transform: scale(1.05);
+}
+
+/* Transición suave para todo */
+* {
+    transition: all 0.3s ease;
+}

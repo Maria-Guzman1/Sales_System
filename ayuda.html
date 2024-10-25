@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayuda</title>
+    <style>
+        /* Estilo general del cuerpo */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #ffffff;
+            min-height: 100vh; /* Asegura que el body ocupe toda la altura de la ventana */
+        }
+
+        /* Estilo para la navegación */
+        .navbar {
+            background-color: #162447;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar-brand {
+            font-size: 1.75rem;
+            font-weight: 700;
+            color: #f8f9fa;
+            text-decoration: none;
+        }
+
+        .navbar-nav {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            margin: 0;
+        }
+
+        .navbar-nav .nav-link {
+            color: #f8f9fa !important;
+            font-weight: 500;
+            margin-left: 15px;
+            text-decoration: none;
+            transition: color 0.3s ease; /* Transición suave para el color del texto */
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #007bff !important; /* Color azul para hover */
+        }
+
+        /* Estilo para el contenido principal */
+        .main-content {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;  
+            border-radius: 8px;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            background-color: #2a3949f8; /* Fondo de contenido principal */
+            flex: 1; /* Asegura que la sección principal ocupe el espacio disponible */
+        }
+
+        .main-content h2 {
+            font-size: 28px;
+            margin-top: 0;
+            color: #ffffff;
+        }
+
+        .main-content p {
+            font-size: 18px;
+        }
+
+        /* Estilo para las preguntas frecuentes */
+        .faq {
+            margin-top: 20px;
+        }
+
+        .faq-item {
+            margin-bottom: 10px;
+        }
+
+        .faq-question {
+            background-color: #007bff; /* Fondo azul para la pregunta */
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .faq-answer {
+            display: none;
+            padding: 10px;
+            border-left: 3px solid #007bff;
+            background-color: #f9f9f9; /* Fondo claro para la respuesta */
+            color: #000; /* Texto negro para la respuesta */
+            border-radius: 5px;
+            margin-top: 5px;
+        }
+
+        /* Estilo para el pie de página */
+        footer {
+            background-color: #162447;
+            padding: 10px;
+            text-align: center;
+            border-top: 2px solid #007bff;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 14px;
+            color: #ffffff;
+        }
+
+        /* Interactividad para los botones */
+        button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #00d1b2;
+            transform: scale(1.05); /* Efecto de zoom al hacer hover */
+        }
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <a class="navbar-brand" href="mi-tienda.html">Sistema de Ventas</a>
+            <span class="navbar-toggler-icon"></span>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="registro-producto.html">Registro de Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="facturacion.html">Facturación</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="gestion-usuarios.html">Administración</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="clientes.html">Clientes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="historial-facturacion.html">Historial de Facturación</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Cerrar sesión</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="main-content">
+        <h2>Preguntas Frecuentes (FAQ)</h2>
+        <div class="faq">
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer(this)">¿Cómo puedo crear una factura?</div>
+                <div class="faq-answer">Para crear una factura, selecciona un cliente y agrega los productos deseados. Luego, haz clic en "Finalizar Factura".</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer(this)">¿Qué hago si no puedo agregar un producto?</div>
+                <div class="faq-answer">Asegúrate de que el producto esté disponible en el inventario y que hayas seleccionado una cantidad válida.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer(this)">¿Dónde puedo encontrar mis facturas anteriores?</div>
+                <div class="faq-answer">Las facturas anteriores se pueden encontrar en la sección de historial de pedidos en tu cuenta.</div>
+            </div>
+        </div>
+
+        <h2>Contacto</h2>
+        <p>Si necesitas más ayuda, no dudes en contactar a nuestro soporte técnico:</p>
+        <p>Email: <a href="mailto:maria.gzman182@gmail.com" style="color: #007bff;">maria.gzman182@gmail.com</a></p>
+        <p>Teléfono: +502 1234-5678</p>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Tu Empresa. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        function toggleAnswer(questionElement) {
+            const answer = questionElement.nextElementSibling;
+            if (answer.style.display === "block") {
+                answer.style.display = "none";
+            } else {
+                answer.style.display = "block";
+            }
+        }
+    </script>
+</body>
+</html>
